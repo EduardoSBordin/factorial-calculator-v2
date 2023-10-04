@@ -11,7 +11,7 @@ function btnResult(){
         let numberFactorial = document.querySelector('#numberFactorial');
 
         getInf.style.display = 'flex';
-        console.log(typeof numberFactorial);
+       // console.log(typeof numberFactorial);
         h2.innerHTML = ' ';
         h1.innerHTML = ' ';
         h3.innerHTML = ' ';
