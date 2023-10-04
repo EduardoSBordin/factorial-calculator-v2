@@ -1,4 +1,4 @@
-const h3 = document.querySelector('h3');
+let h3 = document.querySelector('h3');
 let h1 = document.querySelector('h1');
 let h2 = document.querySelector('h2');
 let getInf = document.querySelector('#inf');
@@ -13,7 +13,8 @@ function btnResult(){
         getInf.style.display = 'flex';
         console.log(typeof numberFactorial);
         h2.innerHTML = ' ';
-        h1.innerHTML = '';
+        h1.innerHTML = ' ';
+        h3.innerHTML = ' ';
         numMultiplicator = 1;
 
     if(numberFactorial.value.length === 0){
@@ -25,6 +26,7 @@ function btnResult(){
 
         h1.innerHTML += `!${numberFactorial.value} = `; // Take the number to apply factorial.
 
+        h3.innerHTML += `!${numberFactorial.value}`;
         for(let i = numberFactorial.value; i > 1; i--){
             
         numMultiplicator *= i; // Multiply the factorial numbers
@@ -36,7 +38,15 @@ function btnResult(){
         }
 
     h1.innerHTML += `${numMultiplicator}`; // Show the final result.
+
+    h3.innerHTML += ` = ${numMultiplicator}`;
     numberFactorial.value = '';
+
     }
 
+}
+
+function btnClean(){
+
+    location.reload();
 }
