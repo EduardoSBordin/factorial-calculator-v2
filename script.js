@@ -33,7 +33,7 @@ function btnResult(){
         numberFactorial.value--;
         
         h2.innerHTML +=`${numMultiplicator} x ${numberFactorial.value} = ${numMultiplicator * numberFactorial.value}<br>`; // Show tha table results.
-        h1.innerHTML += `${numberFactorial.value} x `; // Show what numbers are multiply.
+        h1.innerHTML += `${numberFactorial.value} -> `; // Show what numbers are multiply.
 
         }
 
