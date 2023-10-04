@@ -27,9 +27,9 @@ function btnResult(){
         getInf.style.display = 'none';
     }else{
 
-        h1.innerHTML += `!${numberFactorial.value} = `; // Take the number to apply factorial.
+        h1.innerHTML += `${numberFactorial.value}! = `; // Take the number to apply factorial.
 
-        h3.innerHTML += `!${numberFactorial.value}`;
+        h3.innerHTML += `${numberFactorial.value}!`;
         for(let i = numberFactorial.value; i > 1; i--){
             
         numMultiplicator *= i; // Multiply the factorial numbers
